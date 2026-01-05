@@ -66,3 +66,58 @@ Running the App (Single Command)
 From the project root:
 
 npm run dev
+
+spacex/
+├── backend/
+│ ├── app/
+│ ├── requirements.txt
+│ ├── run.py
+│ └── .env
+├── frontend/
+│ ├── src/
+│ ├── images/
+│ │ └── spacex.png
+│ ├── package.json
+│ └── index.html
+├── package.json
+├── .gitignore
+└── README.md
+
+---
+
+## Prerequisites
+
+Ensure the following are installed:
+
+- **Python 3.10+**
+- **Node.js 18+**
+- **npm**
+
+Verify installations:
+
+```bash
+python --version
+node --version
+npm --version
+
+cd backend
+python -m venv .venv
+source ./.venv/Scripts/activate   # Windows (Git Bash)
+pip install -r requirements.txt
+
+# SQLite (default)
+DATABASE_URL=sqlite:///missioncontrol.db
+
+# Optional Postgres example
+# DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/missioncontrol
+
+SPACEX_API_BASE=https://api.spacexdata.com/v4
+CORS_ORIGINS=http://localhost:5173
+
+Start the backend:
+python run.py
+
+
+
+
+```
