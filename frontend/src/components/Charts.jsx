@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Card, CardContent, Typography } from "@mui/material";
 import {
   ResponsiveContainer,
@@ -17,6 +18,7 @@ export default function Charts({ data }) {
         <Typography variant="h6" sx={{ fontWeight: 700 }}>
           Recent Launch Outcomes
         </Typography>
+
         <Typography variant="body2" sx={{ opacity: 0.7, mt: 0.5 }}>
           success: 1 = success, 0 = failure (null = unknown / upcoming)
         </Typography>

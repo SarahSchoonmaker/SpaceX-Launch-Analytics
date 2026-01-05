@@ -1,0 +1,13 @@
+{
+  "name": "missioncontrol-ai",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npx concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && cmd /c \".venv\\Scripts\\activate && python run.py\"",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 
 function Metric({ label, value }) {
@@ -18,8 +19,10 @@ function Metric({ label, value }) {
 
 export default function MetricCards({ metrics }) {
   const m = metrics || {};
+
   const successRate =
     m.success_rate != null ? `${Math.round(m.success_rate * 100)}%` : "—";
+
   const avgDays =
     m.avg_days_between_recent != null
       ? `${m.avg_days_between_recent} days`
@@ -37,7 +40,7 @@ export default function MetricCards({ metrics }) {
         <Metric label="Avg Days Between (recent)" value={avgDays} />
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
-        <Metric label="Cadence" value={m.cadence ?? "—"} />
+        <Metric label="Launch Frequency" value={m.cadence ?? "—"} />
       </Grid>
     </Grid>
   );
