@@ -4,6 +4,8 @@ MissionControl AI is a full-stack analytics dashboard that ingests SpaceX launch
 
 ---
 
+![MissionControl Dashboard](frontend/src/images/spacex.png)
+
 ## Tech Stack
 
 - **Backend:** Python, Flask, SQLAlchemy
@@ -67,22 +69,6 @@ From the project root:
 
 npm run dev
 
-spacex/
-├── backend/
-│ ├── app/
-│ ├── requirements.txt
-│ ├── run.py
-│ └── .env
-├── frontend/
-│ ├── src/
-│ ├── images/
-│ │ └── spacex.png
-│ ├── package.json
-│ └── index.html
-├── package.json
-├── .gitignore
-└── README.md
-
 ---
 
 ## Prerequisites
@@ -117,6 +103,14 @@ CORS_ORIGINS=http://localhost:5173
 Start the backend:
 python run.py
 
+
+cd ../frontend
+npm install
+
+
+From the project root:
+
+npm install
 
 
 
