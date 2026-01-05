@@ -50,8 +50,6 @@ Start the backend:
 python run.py
 ```
 
-![MissionControl Dashboard](frontend/images/spacex.png)
-
 Frontend (React Dashboard)
 cd ../frontend
 npm install
